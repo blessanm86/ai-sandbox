@@ -23,6 +23,28 @@ The goal is to build a simple, working agent that can answer questions like:
 - **Calendar Source:** Google Calendar or local .ics file
 - **Evaluation:** Custom prompts & behavioral testing
 
+## 🛠️ Development Setup
+
+The repo now ships with an Express + TypeScript service that can act as a lightweight agent backend.
+
+```bash
+pnpm install        # install dependencies
+pnpm dev            # start the local server with live reload
+```
+
+Available routes:
+
+- `GET /ping` → returns `pong` for health checks
+- `POST /llm-query` → accepts a plain text body and echoes it back (useful for wiring future LLM pipelines)
+
+Quality commands:
+
+```bash
+pnpm lint           # ESLint + TypeScript rules
+pnpm test           # Vitest + Supertest coverage for the HTTP routes
+pnpm build && pnpm start  # compile to dist/ and run with Node
+```
+
 ---
 
 ## 🗺️ Milestones

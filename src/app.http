@@ -1,0 +1,10 @@
+@host = http://localhost:4000
+
+### Health check
+GET {{host}}/ping
+
+### Echo an LLM query payload
+POST {{host}}/llm-query
+Content-Type: text/plain
+
+Hello from IntelliJ HTTP client!

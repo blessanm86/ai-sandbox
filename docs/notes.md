@@ -10,6 +10,6 @@
 
 ### Questions
 
-2. ollama modelfile
-3. models/weights/open weights
-4. quantized models
+1. ollama modelfile
+2. models/weights/open weights
+3. quantized models

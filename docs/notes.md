@@ -7,9 +7,6 @@
   coding assistants like codex or claude.
 - Decided to give codex a try as I already use claude at work. Subscribed to ChatGPT Plus for it
 - Decided to start with phi3 and later try mistral:7b as the models and use ollama to run the models
+- Created glossary entries for the buzz words learned so far
 
 ### Questions
-
-1. ollama modelfile
-2. models/weights/open weights
-3. quantized models

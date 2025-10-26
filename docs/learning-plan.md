@@ -10,7 +10,7 @@ Goal: build a local AI agent that can reason, call real-world tools (like a cale
 ### **Milestone 0 – Setup and Foundations**
 - [x] Create repository and initial README ✅
 - [x] Document learning goals and roadmap
-- [ ] Research local LLM options (Ollama, LM Studio, LM Deploy, etc.)
+- [x] Research local LLM options (Ollama, LM Studio, LM Deploy, etc.)
 - [x] Set up environment (Node.js, TypeScript, dotenv, etc.)
 
 ### **Milestone 1 – Local LLM**

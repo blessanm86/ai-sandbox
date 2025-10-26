@@ -11,4 +11,8 @@
 ### Questions
 
 1. What are inference engines (https://github.com/vllm-project/vllm)
-2. Compare ollama and https://lmstudio.ai/
+2. hugging face
+3. gguf files
+4. ollama modelfile
+5. models/weights/open weights
+6. quantized models

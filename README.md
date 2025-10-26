@@ -58,24 +58,7 @@ pnpm build && pnpm start  # compile to dist/ and run with Node
 
 ---
 
-## 🧭 Goals
+## 📘 Knowledge Base
 
-- Learn by building — not just reading about agent frameworks
-- Understand the trade-offs between different approaches
-- Document each step for future reference and reproducibility
-
----
-
-## 📚 References
-
-- [OpenAI Model Context Protocol (MCP)](https://github.com/modelcontextprotocol)
-- [Ollama](https://ollama.ai)
-- [LangChain](https://js.langchain.com)
-- [OpenDevin](https://github.com/OpenDevin/OpenDevin)
-
----
-
-## 🧑‍💻 Author
-
-**Blessan Babu Mathew**  
-Frontend engineer exploring AI systems & agentic development.
+- [Learning Plan](docs/learning-plan.md) — start here for the roadmap and research context
+- [Glossary](docs/glossary.md) — quick definitions for recurring terms and acronyms

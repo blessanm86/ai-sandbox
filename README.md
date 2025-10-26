@@ -49,7 +49,7 @@ pnpm build && pnpm start  # compile to dist/ and run with Node
 
 ## 🗺️ Milestones
 
-- [ ] **Milestone 0:** Project setup, research, environment prep
+- [x] **Milestone 0:** Project setup, research, environment prep
 - [ ] **Milestone 1:** Run a local LLM and send simple prompts
 - [ ] **Milestone 2:** Build a basic tool-calling mechanism (e.g. read from a calendar)
 - [ ] **Milestone 3:** Introduce simple “agent loop” logic

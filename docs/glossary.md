@@ -3,6 +3,14 @@
 - runtime used to run/execute models in a local environment. 
 - optimized to run models on CPU's of everyday hardware such as Macs, Raspberry Pi's etc
 - v8 engine can be used for comparison as runtime to run javascript
+- uses the GGUF file format
+
+### GGUF
+
+- GGML Unified Format - binary format that is fast loading, cross-platform
+- model file format used my llama.cpp
+- contains all the weights and metadata for a language model
+- tar.gz from node packages can be used for comparison (compiled package)
 
 ### ollama
 
@@ -33,3 +41,9 @@
 - runtime used to run/execute models in a local/prod environments.
 - similar to llama.cpp but it is optimized for max performance on GPU's
 - mostly meant to be used in powerful backend systems
+
+### Hugging Face
+
+- registry of models, datasets and ml associated artifacts
+- provides some additional features such running models on their cloud
+- npm can be considered similar (package manager)

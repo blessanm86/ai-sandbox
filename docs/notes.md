@@ -10,9 +10,6 @@
 
 ### Questions
 
-1. What are inference engines (https://github.com/vllm-project/vllm)
-2. hugging face
-3. gguf files
-4. ollama modelfile
-5. models/weights/open weights
-6. quantized models
+2. ollama modelfile
+3. models/weights/open weights
+4. quantized models

@@ -1,6 +1,6 @@
 ### llama.cpp
 
-- runtime used to run/execute models in a local environment. 
+- runtime used to run/execute models in a local environment.
 - optimized to run models on CPU's of everyday hardware such as Macs, Raspberry Pi's etc
 - v8 engine can be used for comparison as runtime to run javascript
 - uses the GGUF file format
@@ -39,7 +39,7 @@
   # Model parameters (hyperparameters)
   PARAMETER temperature 0.3
   ```
-  
+
 
 ### LM Studio
 
@@ -88,3 +88,18 @@
 - quantization can have almost 95% of full model accuracy
 - quantized models normally have the suffix 2k, 4k, 5k, 8k
 - 8k is a safe bet the provides near full accuracy
+
+### AWS Sagemaker
+
+- AWS cloud service to train your own model with your data
+- Provides CI/CD, GPU infra for training and deplyoment
+- Deployment and running the models for your apps
+- Whole like cycle for training, tuning and exeuction of models
+
+### AWS Bedrock
+
+- LLM API as a service from AWS
+- Can call hosted models like anthropic, mistral etc as an api
+- It is a platform of curated list of llm models such as foundational models
+- This is not meant for random customers.
+- Only special partners like META and Anthropic have their models on Bedrock

@@ -1,17 +1,24 @@
 import type { Request, Response } from 'express';
+import { z } from 'zod';
 import { ollamaConfig } from '../config/ollama';
 import { isOllamaError, sendOllamaChat } from '../lib/ollama-client';
 
+const promptSchema = z
+  .string({
+    error: 'Request body must be text',
+  })
+  .trim()
+  .min(1, { message: 'Prompt must not be empty' });
+
 export const llmQueryHandler = async (req: Request, res: Response): Promise<Response> => {
-  if (typeof req.body !== 'string') {
-    return res.status(400).type('text/plain').send('Request body must be text');
+  const validationResult = promptSchema.safeParse(req.body);
+
+  if (!validationResult.success) {
+    const [issue] = validationResult.error.issues;
+    return res.status(400).type('text/plain').send(issue?.message ?? 'Invalid prompt');
   }
 
-  const prompt = req.body.trim();
-
-  if (!prompt) {
-    return res.status(400).type('text/plain').send('Prompt must not be empty');
-  }
+  const prompt = validationResult.data;
 
   try {
     const result = await sendOllamaChat(prompt);

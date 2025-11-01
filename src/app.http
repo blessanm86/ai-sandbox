@@ -3,7 +3,7 @@
 ### Health check
 GET {{host}}/ping
 
-### Echo an LLM query payload
+### Forward a prompt to the local Ollama model
 POST {{host}}/llm-query
 Content-Type: text/plain
 

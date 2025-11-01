@@ -35,15 +35,28 @@ pnpm dev            # start the local server with live reload
 Available routes:
 
 - `GET /ping` → returns `pong` for health checks
-- `POST /llm-query` → accepts a plain text body and echoes it back (useful for wiring future LLM pipelines)
+- `POST /llm-query` → accepts a plain text prompt, forwards it to the configured Ollama model, and returns a JSON payload with the model response and latency
 
 Quality commands:
 
 ```bash
 pnpm lint           # ESLint + TypeScript rules
-pnpm test           # Vitest + Supertest coverage for the HTTP routes
+pnpm test           # Vitest coverage for HTTP handlers and Ollama client
 pnpm build && pnpm start  # compile to dist/ and run with Node
 ```
+
+### Querying the local LLM directly
+
+With Ollama running locally (default `http://127.0.0.1:11434`), you can send prompts without the Express server:
+
+```bash
+pnpm tsx src/scripts/send-prompt.ts "Summarise the repo goals in one sentence."
+```
+
+Override defaults via environment variables when needed:
+
+- `OLLAMA_HOST` (default `http://127.0.0.1:11434`)
+- `OLLAMA_MODEL` (default `llama3-groq-tool-use:8b`)
 
 ---
 

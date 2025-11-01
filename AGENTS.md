@@ -14,6 +14,8 @@
 - Write modern ES modules with 2-space indentation; run Prettier (`pnpm format`) prior to committing.
 - Prefer descriptive file names in kebab-case (`calendar-tool.ts`), exported classes in PascalCase, and functions/constants in camelCase.
 - Keep side-effectful configuration in `.env.local`; reference variables via a typed `config.ts` module rather than `process.env` scattered across files.
+- For typescript, favour type over interface
+- Favour functional approach over classes
 
 ## Testing Guidelines
 - Co-locate unit specs in `tests/` using the `*.test.ts` suffix; mimic prompt flows with scenario names such as `schedule-today.test.ts`.

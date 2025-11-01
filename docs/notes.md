@@ -19,5 +19,8 @@
   ```
 - Got codex to generate a promt script to communicate to ollama.
 - Ollama also comes with a server. Calling /api/chat spins up the llm and responnds with the llm response. [Docs](https://ollama.readthedocs.io/en/api/#generate-a-chat-completion)
+- Ollama also has an npm package that makes it a lot simpler with more features but for learning purposes the custom client is good enough
+- Experimented with system prompts to see how model response can get altered
+- This milestone also included experimenting with different models but decided to skip as model evaluation is not interesting for me atm.
 
 ### Questions

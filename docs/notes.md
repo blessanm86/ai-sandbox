@@ -17,5 +17,7 @@
   ollama pull llama3-groq-tool-use:8b
   ollama run llama3-groq-tool-use:8b
   ```
+- Got codex to generate a promt script to communicate to ollama.
+- Ollama also comes with a server. Calling /api/chat spins up the llm and responnds with the llm response. [Docs](https://ollama.readthedocs.io/en/api/#generate-a-chat-completion)
 
 ### Questions

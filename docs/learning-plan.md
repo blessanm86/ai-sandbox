@@ -15,7 +15,7 @@ Goal: build a local AI agent that can reason, call real-world tools (like a cale
 
 ### **Milestone 1 – Local LLM**
 - [x] Install and run a local LLM (e.g., `llama3` in Ollama)
-- [ ] Write a simple Node.js script to send prompts and log responses
+- [x] Write a simple Node.js script to send prompts and log responses
 - [ ] Compare performance, response time, and accuracy with remote APIs
 
 ### **Milestone 2 – Tool Calling (Calendar Integration)**

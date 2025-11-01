@@ -17,6 +17,8 @@ describe('sendOllamaChat', () => {
       status: 200,
       json: async () => ({
         message: { role: 'assistant', content: 'Hello from Ollama' },
+        prompt_eval_count: 12,
+        eval_count: 34,
       }),
     });
 
@@ -49,5 +51,7 @@ describe('sendOllamaChat', () => {
     });
     expect(result.message).toBe('Hello from Ollama');
     expect(result.status).toBe(200);
+    expect(result.inputTokens).toBe(12);
+    expect(result.outputTokens).toBe(34);
   });
 });

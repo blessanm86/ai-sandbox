@@ -12,6 +12,8 @@ describe('API routes', () => {
       status: 200,
       json: async () => ({
         message: { role: 'assistant', content: 'Stubbed response' },
+        prompt_eval_count: 99,
+        eval_count: 42,
       }),
     });
 
@@ -50,6 +52,8 @@ describe('API routes', () => {
     expect(res.getBody()).toMatchObject({
       model: 'llama3-groq-tool-use:8b',
       message: 'Stubbed response',
+      inputTokens: 99,
+      outputTokens: 42,
     });
   });
 });

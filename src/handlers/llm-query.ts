@@ -25,6 +25,8 @@ export const llmQueryHandler = async (req: Request, res: Response): Promise<Resp
     return res.status(200).json({
       model: ollamaConfig.model,
       latencyMs: result.latencyMs,
+      inputTokens: result.inputTokens,
+      outputTokens: result.outputTokens,
       message: result.message,
     });
   } catch (error) {

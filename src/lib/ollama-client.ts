@@ -16,6 +16,8 @@ export type OllamaChatResult = {
   status: number;
   latencyMs: number;
   message: string;
+  inputTokens: number | null;
+  outputTokens: number | null;
   raw: unknown;
 };
 
@@ -34,6 +36,8 @@ type OllamaChatResponsePayload = {
   response?: string;
   done?: boolean;
   total_duration?: number;
+  prompt_eval_count?: number;
+  eval_count?: number;
   [key: string]: unknown;
 };
 
@@ -67,11 +71,16 @@ export async function sendOllamaChat(
 
   const payload = (await response.json()) as OllamaChatResponsePayload;
   const message = payload.message?.content ?? payload.response ?? '';
+  const inputTokens =
+    typeof payload.prompt_eval_count === 'number' ? payload.prompt_eval_count : null;
+  const outputTokens = typeof payload.eval_count === 'number' ? payload.eval_count : null;
 
   return {
     status: response.status,
     latencyMs,
     message,
+    inputTokens,
+    outputTokens,
     raw: payload,
   };
 }

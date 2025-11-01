@@ -14,7 +14,7 @@ async function main(): Promise<void> {
   console.log(`[prompt] ${prompt}`);
 
   try {
-    const result = await sendOllamaChat(prompt);
+    const result = await sendOllamaChat(prompt, {system: 'You respond in German'});
     console.log(`[response] status=${result.status} latency=${result.latencyMs}ms`);
     console.log(result.message);
   } catch (error) {

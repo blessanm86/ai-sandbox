@@ -1,6 +1,6 @@
 # 🎯 AI Sandbox — Learning Plan
 
-This document tracks the overall learning roadmap for the *AI Sandbox* project.  
+This document tracks the overall learning roadmap for the *AI Sandbox* project.
 Goal: build a local AI agent that can reason, call real-world tools (like a calendar), and evaluate its own performance.
 
 ---
@@ -14,7 +14,7 @@ Goal: build a local AI agent that can reason, call real-world tools (like a cale
 - [x] Set up environment (Node.js, TypeScript, dotenv, etc.)
 
 ### **Milestone 1 – Local LLM**
-- [ ] Install and run a local LLM (e.g., `llama3` in Ollama)
+- [x] Install and run a local LLM (e.g., `llama3` in Ollama)
 - [ ] Write a simple Node.js script to send prompts and log responses
 - [ ] Compare performance, response time, and accuracy with remote APIs
 

@@ -28,3 +28,8 @@
 ## Security & Configuration Tips
 - Never commit `.env*` files, calendar data, or model weights; add new patterns to `.gitignore` before working with sensitive inputs.
 - When experimenting with MCP servers or local LLMs, pin versions in `package.json` and record required ports in `docs/agents.md` for reproducibility.
+
+## Important Instructions
+- Always respond to the prompt with your analysis, answer or execution plan.
+- Ask clarifying questions when in doubt or need more information to confirm a hypothesis
+- DO NOT START CODING UNLESS EXPLICITLY ASK TO DO SO
